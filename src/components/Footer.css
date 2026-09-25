@@ -1,0 +1,23 @@
+.executive-footer {
+  margin-top: 4rem;
+  padding: 3rem 0;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  text-align: left;
+}
+
+.footer-contact-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-contact-link:hover {
+  color: #38bdf8;
+}

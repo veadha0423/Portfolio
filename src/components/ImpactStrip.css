@@ -1,0 +1,38 @@
+.executive-impact-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 5rem;
+  width: 100%;
+}
+
+.impact-counter-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: left;
+  backdrop-filter: blur(16px);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.impact-counter-card:hover {
+  border-color: var(--border-active);
+  transform: translateY(-2px);
+}
+
+.impact-number {
+  font-family: var(--font-mono);
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.impact-label {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}

@@ -1,0 +1,111 @@
+.hero-editorial-center {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2.5rem 0 3.5rem 0;
+}
+
+.legal-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #94a3b8;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid var(--border-subtle);
+  padding: 0.35rem 0.95rem;
+  border-radius: 9999px;
+  margin-bottom: 1.4rem;
+}
+.legal-name-headline {
+  font-size: clamp(2.5rem, 6.5vw, 4.8rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(180deg, #ffffff 40%, #cbd5e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.executive-summary-text {
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  color: var(--text-muted);
+  font-weight: 300;
+  line-height: 1.8;
+  max-width: 760px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.executive-highlight {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.action-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3.5rem;
+}
+
+.btn-primary-executive {
+  background: #f8fafc;
+  color: #090b10;
+  padding: 0.85rem 1.85rem;
+  border-radius: 12px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.btn-primary-executive:hover {
+  background: #38bdf8;
+  color: #040810;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.28);
+}
+
+.btn-secondary-executive {
+  background: rgba(17, 24, 39, 0.65);
+  color: #e2e8f0;
+  border: 1px solid var(--border-subtle);
+  padding: 0.85rem 1.65rem;
+  border-radius: 12px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  cursor: pointer;
+  backdrop-filter: blur(12px);
+  transition: all 0.25s ease;
+}
+.btn-secondary-executive:hover {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  background: rgba(30, 41, 59, 0.7);
+}
+
+@media (max-width: 768px) {
+  .action-cluster {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn-primary-executive, .btn-secondary-executive {
+    width: 100%;
+    justify-content: center;
+  }
+}
